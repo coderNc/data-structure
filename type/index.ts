@@ -15,7 +15,7 @@ export class TreeNode<T> {
     this.value = value;
   }
 }
-export class ListNode<T> {
+export class ListNode<T = any> {
   value: T;
   next: ListNode<T> | null = null;
   constructor(value: T) {
