@@ -22,3 +22,12 @@ export class ListNode<T = any> {
     this.value = value;
   }
 }
+
+export class DoubleListNode<T = any> {
+  value: T;
+  next: DoubleListNode<T> | null = null;
+  prev: DoubleListNode<T> | null = null;
+  constructor(value: T) {
+    this.value = value;
+  }
+}
