@@ -7,7 +7,7 @@ export class IRecord {
   }
 }
 
-export class TreeNode<T> {
+export class TreeNode<T = any> {
   value: T;
   left: TreeNode<T> | null = null;
   right: TreeNode<T> | null = null;
