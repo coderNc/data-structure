@@ -15,6 +15,13 @@ export class TreeNode<T = any> {
     this.value = value;
   }
 }
+export class ManyTreeNode<T = any> {
+  value: T;
+  children: ManyTreeNode<T> [] = [];
+  constructor(value: T) {
+    this.value = value;
+  }
+}
 export class ListNode<T = any> {
   value: T;
   next: ListNode<T> | null = null;
